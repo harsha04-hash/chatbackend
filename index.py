@@ -83,7 +83,7 @@ def get_vector_store(chunks):
     return faiss_json_str
 
 def ollama_llm(question, context):
-    llm=ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.3)
+    llm = ChatGoogleGenerativeAI(model="models/gemini-1.5-pro", temperature=0.3)    
     prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
     prompt = prompt_template.format(context=context, question=question)
     response = llm.invoke(prompt)
