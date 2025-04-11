@@ -1,0 +1,9 @@
+Flask
+Flask-Cors
+PyPDF2
+langchain
+langchain-community
+langchain-google-genai
+google-generativeai
+faiss-cpu
+gunicorn
